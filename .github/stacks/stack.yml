@@ -1,63 +1,65 @@
 version: 0.1.0
 uses:
-- 3loka/nextjs-aws-s3-stack
-- 3loka/node-azure-stack
+  - 3loka/nextjs-aws-s3-stack
+  - 3loka/node-azure-stack
 name: A stack to create a full stack application
 description: A stack to build and deploy a full stack application.
 branding:
   icon: ""
-  color: ""
+  color: "hazel"
 inputs:
-- name: AWS_KEY_ID
-  description: Enter your AWS Key ID. This will be stored as a secret
-  issecret: false
-  required: true
-- name: AWS_SECRET_ACCESS_KEY
-  description: Enter your AWS Secret Access key. This will be stored as a secret
-  issecret: false
-  required: true
-- name: AWS_REGION
-  description: Which Region do you want to Deploy to?
-  issecret: false
-  required: true
-- name: AWS_S3_BUCKET_NAME
-  description: Provide a Unique name for your AWS S3 Bucket
-  issecret: false
-  required: true
-- name: USE_EXISTING_BUCKET
-  description: Is this an existing S3 Bucket (Type true or false, Default value is
-    false)?
-  issecret: false
-  required: true
-- name: AZURE_APP_SERVICE_NAME
-  description: Enter the name of the Azure App Service
-  issecret: false
-  required: true
-- name: AWS_KEY_ID
-  description: Enter your AWS Key ID. This will be stored as a secret
-  issecret: false
-  required: true
-- name: AWS_SECRET_ACCESS_KEY
-  description: Enter your AWS Secret Access key. This will be stored as a secret
-  issecret: false
-  required: true
-- name: AWS_REGION
-  description: Which Region do you want to Deploy to?
-  issecret: false
-  required: true
-- name: AWS_S3_BUCKET_NAME
-  description: Provide a Unique name for your AWS S3 Bucket
-  issecret: false
-  required: true
-- name: USE_EXISTING_BUCKET
-  description: Is this an existing S3 Bucket (Type true or false, Default value is
-    false)?
-  issecret: false
-  required: true
-- name: AZURE_APP_SERVICE_NAME
-  description: Enter the name of the Azure App Service
-  issecret: false
-  required: true
+  - name: AWS_KEY_ID
+    description: Enter your AWS Key ID. This will be stored as a secret
+    issecret: false
+    required: true
+  - name: AWS_SECRET_ACCESS_KEY
+    description: Enter your AWS Secret Access key. This will be stored as a secret
+    issecret: false
+    required: true
+  - name: AWS_REGION
+    description: Which Region do you want to Deploy to?
+    issecret: false
+    required: true
+  - name: AWS_S3_BUCKET_NAME
+    description: Provide a Unique name for your AWS S3 Bucket
+    issecret: false
+    required: true
+  - name: USE_EXISTING_BUCKET
+    description:
+      Is this an existing S3 Bucket (Type true or false, Default value is
+      false)?
+    issecret: false
+    required: true
+  - name: AZURE_APP_SERVICE_NAME
+    description: Enter the name of the Azure App Service
+    issecret: false
+    required: true
+  - name: AWS_KEY_ID
+    description: Enter your AWS Key ID. This will be stored as a secret
+    issecret: false
+    required: true
+  - name: AWS_SECRET_ACCESS_KEY
+    description: Enter your AWS Secret Access key. This will be stored as a secret
+    issecret: false
+    required: true
+  - name: AWS_REGION
+    description: Which Region do you want to Deploy to?
+    issecret: false
+    required: true
+  - name: AWS_S3_BUCKET_NAME
+    description: Provide a Unique name for your AWS S3 Bucket
+    issecret: false
+    required: true
+  - name: USE_EXISTING_BUCKET
+    description:
+      Is this an existing S3 Bucket (Type true or false, Default value is
+      false)?
+    issecret: false
+    required: true
+  - name: AZURE_APP_SERVICE_NAME
+    description: Enter the name of the Azure App Service
+    issecret: false
+    required: true
 configs:
   repo-metadata:
     parameters:
